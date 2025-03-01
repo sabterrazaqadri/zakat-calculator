@@ -1,6 +1,7 @@
 'use client'
 
 import { useZakatStore } from '../store/zakatStore'
+import Link from 'next/link'
 
 export default function MetalRates() {
   const { assets, updateAssets, calculateRatesPerGram } = useZakatStore()
@@ -34,6 +35,9 @@ export default function MetalRates() {
           <p className="text-lg font-semibold text-yellow-600">
             Rate per gram: Rs {goldPerGram.toFixed(2)}
           </p>
+          <Link href="https://hamariweb.com/finance/gold_rate/" target="_blank" className="text-gray-500 text-sm hover:underline">
+            Check today&apos;s rate <span className="text-green-500">Click Here</span>
+          </Link>
         </div>
       </div>
 
@@ -58,6 +62,9 @@ export default function MetalRates() {
           <p className="text-lg font-semibold text-gray-500">
             Rate per gram: Rs {silverPerGram.toFixed(2)}
           </p>
+          <Link href="https://hamariweb.com/finance/silver_rate/" target="_blank" className="text-gray-500 text-sm hover:underline">
+            Check today&apos;s rate <span className="text-green-500">Click Here</span>
+          </Link>
         </div>
       </div>
     </div>
