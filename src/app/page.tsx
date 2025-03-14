@@ -1,3 +1,5 @@
+
+
 import ZakatCalculator from './components/ZakatCalculator'
 import Script from 'next/script'
 
@@ -9,12 +11,16 @@ export default function Home() {
       </h1>
       <ZakatCalculator />
 
-      {/* Ad Script */}
+      {/* Ad Script - Loads Asynchronously */}
       <Script 
-        src="//pl26109967.effectiveratecpm.com/45/54/af/4554afae580009c06b3ac05b7c7033d1.js"
-        strategy="lazyOnload"
+        src="//pl26109978.effectiveratecpm.com/3271b9de3dbab0d9d278be82c64f7ea1/invoke.js" 
+        strategy="afterInteractive"
+        async 
+        data-cfasync="false"
       />
+
+      {/* Ad Container */}
+      <div id="container-3271b9de3dbab0d9d278be82c64f7ea1"></div>
     </main>
   )
 }
-
