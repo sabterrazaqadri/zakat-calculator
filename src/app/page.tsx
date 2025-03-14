@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-sync-scripts */
+
 import ZakatCalculator from './components/ZakatCalculator'
 
 export default function Home() {
